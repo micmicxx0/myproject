@@ -1,0 +1,377 @@
+body{
+	margin:0px;
+	border:0px;
+	padding:0px;
+	}
+header{
+	padding:15px;	
+	margin: 0px 0px 0px 0px;
+	border-radius:10px;
+	background-color:lightgray;
+	width:100%;
+	height:40px;
+
+
+}
+.header-table{
+	transform:translateY(-30%);
+	width:100%;
+}
+.btn{
+	color:white;
+	padding:10px;
+	text-decoration:none;
+	font-weight:900;
+	font-size:20px;
+	background-color:coral;
+	border-radius:10px;
+	border:none;
+	cursor: pointer;
+
+}
+
+.hycook{
+text-decoration:none;
+color:white;
+}
+
+#hycook-buttons:hover , #hycook-buttons2:hover{
+	background-color: lightblue;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+	color:white;
+	text-decoration:none;
+	font-weight:900;
+	font-size:20px;
+	border-radius:10px;
+  padding: 10px;
+  background-color: coral;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-toggle:hover, .btn:hover{
+ 	animation-name:zoomout-btn;
+  	animation-duration:0.5s;
+  	animation-timing-funcition:ease-in;
+}
+@keyframes zoomout-btn{
+	0%{
+
+		transform:scale(100%);
+	}
+	50%{
+		
+		transform:scale(90%);
+	}
+	100%{
+	
+		transform:scale(100%);
+	}
+}
+
+.dropdown-menu {
+  display:none;
+  background-color:lightcoral;
+  padding:0px;
+  list-style: none;
+  margin-top: 0;
+  border-radius:5px; 
+  position:absolute;
+  z-index:998;
+  text-align:center;
+  font-size:15pt;
+  
+  animation-name:roll-down;
+  animation-duration:0.5s;
+  animation-timing-funcition:ease-in;
+}
+@keyframes roll-down{
+	0%{
+		transform:translateY(-100px);
+		transform:scaleX(0%)
+	}
+	50%{
+		transform:scaleX(0%);
+	}
+
+	100%{
+		transform:translateY(0px);
+		transform:scaleX(100%)
+	}
+}
+
+.dropdown:hover .dropdown-menu{
+  display:block;
+
+}
+
+.bg{
+	margin-top:-20px;
+	background-image:url("images/background.jpeg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	filter:blur(5px);
+	position:relative;
+	height:200vh;
+}
+.content{
+	margin-top:0px;
+	background-color:;
+	border-radius:50px;
+	position:absolute;
+	top:1%;
+	left:26%;
+	transform:translate(-15%, 0%);
+	width:67vw;
+	
+
+}
+.section{
+	margin:20px;
+}
+
+/*HEADINGGGGGG AND BUTTONS###################################################################################################################*/
+
+
+/*CONTENT LIKE VIDEOS,PROCEDURE,AND INGREDIENTS#############################################################################################*/
+
+.myVids{
+	width:430px;
+	height:400px;
+	z-index:-1;
+
+}
+.video_box{
+	padding:0px 10px 10px 10px;
+	width:17%;
+	background-color:black;
+	border-radius:10px;
+}
+
+.video_Discription{
+	font-weight:300;
+	font-size:20px;
+	color:white;
+	text-align:left;
+	vertical-align:text-top;
+	padding:0px;
+}
+.video_Discription2{
+	height:100%;
+	width:100%;
+}
+.vhost{
+	width:100%;
+	transform:translate(-20px,60px);
+}
+.vtitle-main{
+	text-decoration:none;
+	color: white;
+	text-align:center;
+	font-size:30pt;
+	z-index:2;
+	transform:translateX(30%);
+	width:300px;
+	padding-right:px;
+	border-radius:30px;
+	background-color:coral;
+
+}
+.vtitle{
+	font-family:sans-serif;
+	font-weight:800;
+	font-size:20pt;
+	border-radius:20px;
+	background-color:coral;
+	color: white;
+	text-align:center;
+	font-size:30px;
+	margin:0px;
+	width:100%;	
+}
+#vid-title{
+	transform:translate(-10px,0px);
+}
+.vid-title-main{
+	height:10px;
+
+}
+
+.list{
+	height:4in;
+	width:5in;
+	overflow:auto;
+}
+
+.procedure{
+	color:white;
+	font-size:20pt;
+	font-family:Arial;
+
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	counter-reset:count;
+	
+
+}
+.Plist::before{
+	content:counter(count);
+	counter-increment:count;
+	font-family:sans-serif;
+	color:coral;
+	font-weight:bold;
+	font-size:25pt;
+	margin-right:5px;
+	
+}
+
+ul.stylelist{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	counter-reset:count;
+
+}
+.Ilist:before{
+	content:"\2764";
+	font-family:sans-serif;
+	color:whitesmoke;
+	font-weight:bold;
+	font-size:25pt;
+	margin-right:10px;
+}
+
+
+/*Recipies Page !!!!!!!!!!!!!!!!!!!UP ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*HOME PAGE!!!-------------------------------------------------------------------------------------------------------------------------*/
+
+.homebg{
+	margin-top:-20px;
+	background-image:url("images/background.jpeg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	filter:blur(5px);
+	position:relative;
+	height:135vh;
+}
+.section-table{
+	width:100%;
+}
+.Introduction{
+	border-radius:20px;
+	background-color:coral;
+	padding-left:30px;
+	padding-right:30px;
+	color: white;
+	text-align:center;
+	font-size:30px;
+	width:99%;
+	
+}
+
+
+.img-control{
+	width:450px;
+	height:450px;
+
+	
+}
+@keyframes zoomin{
+	0%{
+		
+		transform:scale(100%);
+	}
+	50%{
+		
+		transform:scale(110%);
+	}
+	100%{
+		
+		transform:scale(100%);
+	}
+}
+.after-img-animation{
+	
+	width:100%;
+	
+	padding:5px;
+	border-radius:5px;
+	background-color:coral;
+	color:white;
+	text-align:center;
+	font-weight:bolder;
+	z-index:2;
+	text-decoration: none;
+}
+#batong{
+	
+}
+
+
+.img-control:hover{
+	animation-name:zoomin;
+	animation-duration:1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode:forwards;
+	cursor: pointer;
+}
+
+
+div#two{
+
+	z-index:1;
+	
+
+}
+div#one{
+	
+	
+	z-index:1;
+}
+.Started{
+	color:white;
+	font-size:20pt;
+	font-weight:bolder;
+}
+
+/*ABOUT PAGE #########################################################################################################################*/
+.aboutpage{
+	font-variant:small-caps;
+	text-align:center;
+	color:white;
+	font-size:20pt;
+	font-family:;
+}
+.about-content{
+		font-weight:900;
+}
+ul.aboutUL{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	counter-reset:count;
+	font-weight:500;
+
+}
+.year{
+
+}
+.year-content{
+
+	transform:translateY(1in);
+	font-variant:small-caps;
+	text-align:center;
+	color:white;
+	font-weight:900;
+	font-size:15pt;
+}
